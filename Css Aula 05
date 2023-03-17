@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik:wght@300&display=swap');
+hmtl{
+  width: auto;
+  height: auto;
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+   
+}
+
+
+/* MAIN */
+main .row{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    row-gap: 5rem;
+}
+main header{
+    row-gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.opcoes :nth-child(1),.opcoes :nth-child(2){
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #80ced6;
+    padding: 1rem;
+    transition: .5s;
+}
+
+.opcoes :nth-child(1):hover,.opcoes :nth-child(2):hover{
+    background-color: transparent;
+}
+
+/* CABEÇALHO */
+header div#logo,header nav{
+    border-bottom: .05rem solid black;
+    margin-top: 2rem;
+    align-items: center;
+  
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid red;
+    padding: 1rem;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+header nav li:hover{
+    border: 0;
+    text-decoration: double;
+}
+#logo{
+    display: flex;
+    column-gap: 1rem;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* TAGS */
+.imagem{
+    width: 500px;
+    border-top: .2rem solid #80ced6;
+    border-bottom: .2rem solid #f7786b;
+}
+
+#titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+    
+}
+/* MEDIA QUERIES */
+@media (max-width: 500px){
+    #footer-opt1{
+        justify-content:center;
+    }
+    #footer-opt2{
+        justify-content:center;
+    }
+}
